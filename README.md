@@ -1,18 +1,18 @@
-# 🔐 SSH Authentication Monitoring Lab
+# SSH Authentication Monitoring Lab
 
-## 📌 Objective
+## Objective
 Analyze SSH authentication logs and understand the difference between failed and successful login attempts in Linux.
 
 ---
 
-## 🖥 Environment
+## Environment
 - Kali Linux VM
 - OpenSSH service
 - journalctl for log analysis
 
 ---
 
-## 👤 User Setup
+## User Setup
 
 ### Create a new user
 ```bash
@@ -31,7 +31,7 @@ groups test1
 
 ---
 
-## 🔎 Authentication Simulation
+## Authentication Simulation
 
 ### Generate failed login attempts
 ```bash
@@ -47,7 +47,7 @@ ssh test1@localhost
 
 ---
 
-## 📊 Log Analysis
+## Log Analysis
 
 ### View SSH logs
 ```bash
@@ -76,7 +76,7 @@ sudo journalctl -u ssh -b | grep "Accepted password" | wc -l
 
 ---
 
-## 📌 Key Observations
+## Key Observations
 
 - Invalid users generate:
   `Failed password for invalid user`
@@ -91,7 +91,7 @@ sudo journalctl -u ssh -b | grep "Accepted password" | wc -l
 
 ---
 
-## 🎯 Outcome
+## Outcome
 
 This lab helped me understand:
 
